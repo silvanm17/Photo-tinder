@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-200 flex justify-center">
+
+
+    <div class="flex flex-col">
+        <div class="bg-white rounded-sm mt-4" style="width: 530px;">
+
+
+            <div class="img"></div>
+
+            <div class="flex flex-row justify-center p-4 ">
+
+                <div id="like">
+                    <button
+                        class="inline-flex items-center justify-center w-16 h-16 mr-2 border border-black rounded-full">
+                        <svg class="w-8 h-8 fill-current" viewBox="0 0 20 20">
+                            <path
+                                d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                                clip-rule="evenodd" fill-rule="evenodd" fill="red"></path>
+                        </svg>
+                    </button>
+                </div>
+
+                <div id="dislike">
+                    <button
+                        class="inline-flex items-center justify-center w-16 h-16 mr-2 border border-black rounded-full">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" fill="red" class="bi bi-x"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <div class=" mt-4 rounded-sm bg-white" style="width: 530px;">
+            <div>
+                <h1 class=" text-xl text-gray-400 font-medium p-4 mt-2">My Favorites</h1>
+            </div>
+            <div class="flex justify-start">
+                <p class="favorites"></p>
+            </div>
+        </div>
+        <br>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
